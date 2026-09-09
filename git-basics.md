@@ -10,3 +10,7 @@ GITHUB -> A APPLICATION/WEBSITE WHERE WE CAN PUT OUR CODE.
 
 2.  add/initialize git to your project
     types of file statuses in git -> U,A,M
+
+3. Branching
+   consider the whole project as a tree
+   and all peoples are working on different branches.
