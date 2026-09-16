@@ -1,10 +1,10 @@
-name : "flow"
+name: "flow"
  
-on : flow_dispatch
+on: workflow_dispatch
 
-jobs : 
-    greet_user :
-      runs-on : ubuntu-latest
-      steps :
-      name : user
-      echo : "run the file"
+jobs: 
+    greet_user:
+      runs-on: ubuntu-latest
+      steps:
+        - name: user
+          run: echo "run the file"
