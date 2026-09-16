@@ -1,0 +1,10 @@
+name : "flow"
+ 
+on : flow_dispatch
+
+jobs : 
+    greet_user :
+      runs-on : ubuntu-latest
+      steps :
+      name : user
+      echo : "run the file"
