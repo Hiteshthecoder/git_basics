@@ -7,4 +7,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: check if index.js file exists
-              run: test -f index.js
+              run: test -f ../index.js
