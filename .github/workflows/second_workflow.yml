@@ -8,4 +8,3 @@ jobs:
         steps:
             - name: check if index.js file exists
               run: test -f index.js
-    
