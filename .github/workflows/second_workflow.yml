@@ -2,9 +2,18 @@ name: second_workflow
 
 on: push
 
+# parallel execution and sequential execution
+
 jobs:
-    check_index_file:
+    create_user:
         runs-on: ubuntu-latest
         steps:
-            - name: check if index.js file exists
-              run: test -f /index.js
+            - name: first step of creating a user
+              run: echo "User Created"
+    
+    verify_user:
+        runs-on: ubuntu-latest
+        needs: [create_user]
+        steps:
+            - name: this step is to authenticate user.
+              run: echo "user verified"
