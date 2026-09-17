@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: first step of creating a user
-              run: echo "User Created"
+              run: exit 1
     
     verify_user:
         runs-on: ubuntu-latest
