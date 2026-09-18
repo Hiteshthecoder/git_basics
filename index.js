@@ -1,1 +1,1 @@
-console.log("Index.js file exists")
+console.log(5==5
