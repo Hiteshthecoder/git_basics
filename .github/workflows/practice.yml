@@ -1,0 +1,10 @@
+name : "understand-work"
+
+on: push
+
+jobs:
+     add-file:
+       runs-on : ubuntu-latest
+       steps:
+         - name : "file exist"
+           run : echo "run the new file"
