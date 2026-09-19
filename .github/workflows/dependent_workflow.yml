@@ -1,0 +1,17 @@
+name: dependent_workflow
+
+on:
+    workflow_run: 
+        workflows: [real_workflow]
+        types: completed
+
+
+jobs:
+    real_workflow_status:
+        runs-on: ubuntu-latest
+        if: ${{github.event.workflow_run.conclusion == 'success'}}
+        steps:
+            - name: check if real workflow is successfully executed or not
+              run : echo "real workflow is successfull if you are seeing this message"
+
+            

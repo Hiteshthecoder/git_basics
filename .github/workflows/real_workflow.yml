@@ -26,3 +26,24 @@ jobs:
 
             - name: check javascript code
               run: node --check index.js
+    # generate_build:
+    #   runs-on: ubuntu-latest
+    #   needs: [validate-files]
+    #   steps:
+    #     - name: download code
+    #       uses: actions/checkout@v4
+    #     - name: download nodejs
+    #       uses: actions/setup-node@v4
+    #       with: 
+    #           node-version: '21.x'
+    #     - name: install dependency
+    #       run: npm ci
+
+    #     - name: build react project
+    #       run: npm build
+
+    #     - name: generate artifacts
+    #       uses: actions/upload-artifact@v4
+    #       with:
+    #         path: dist/
+    #         retention-days: 7
