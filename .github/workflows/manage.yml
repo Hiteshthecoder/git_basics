@@ -1,0 +1,10 @@
+name : "flow"
+
+on : workflow_dispatch
+
+jobs:
+      user:
+        runs-on : ubuntu-latest
+         steps:
+           name : "cloud computing project"
+           run : echo "ready to commit for upload"

@@ -1,0 +1,10 @@
+name : "new file"
+
+on : workflow_dispatch
+
+jobs: 
+      new_user:
+          runs-on : ubuntu-latest
+          steps:
+           - name : "my machine"
+             run : echo "my new project is ready to upload on git hub"
