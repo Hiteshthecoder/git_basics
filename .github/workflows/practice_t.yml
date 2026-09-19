@@ -1,0 +1,13 @@
+name : "submited"
+
+on : workflow_dispatch
+
+jobs:
+     add_something:
+        runs-on : ubuntu-latest
+        steps:
+          -name : "upload"
+          run : echo "my new file is uploaded"
+
+
+          
